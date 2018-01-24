@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body {
+			font-size: 200%;
+		}
+		#btno {
+			border: none;
+			color: white;
+			cursor: pointer;
+			padding: 14px 28px;
+			background-color: #2196F3;
+			font-size: 14px;
+		}
+		#btns {
+			border: none;
+			color: white;
+			cursor: pointer;
+			padding: 14px 28px;
+			background-color: #2196F3;
+			font-size: 14px;
+		}
+	</style>
+	<title>stock</title>
+</head>
+<body>
+helicopter value:<p id="Hval"></p>
+helicopters:<p id="helicopters"></p>
+<script type="text/javascript">
+	var money = 1000;
+			
+
+ var heli = 0;
+function buy_heli() {
+
+	money -= ranval;
+	document.getElementById("money").innerHTML = "Money:" + money;
+heli++;
+document.getElementById("helicopters").innerHTML = heli;
+
+
+}
+
+window.random_val = ((1000+(Math.random() * 40000)) / 1000).toFixed(3);
+
+
+function generate_rnum() {
+window.ranval = document.getElementById("Hval").innerHTML = ((1000+(Math.random() * 40000)) / 1000).toFixed(3);
+
+}
+
+
+</script>
+<p id="money"></p>
+<button id="btno" onclick="buy_heli()">buy heli!</button>
+<button id="btns" onclick="generate_rnum()">day</button>
+
+
+
+
+</body>
+</html>
